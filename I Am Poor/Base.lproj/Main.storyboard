@@ -17,42 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coal" translatesAutoresizingMaskIntoConstraints="NO" id="7ar-dv-1iv">
-                                <rect key="frame" x="75" y="238" width="226" height="192"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="192" id="9b4-QK-ViP"/>
-                                    <constraint firstAttribute="width" constant="226" id="w6u-fL-SnQ"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am POOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPZ-x5-BGU">
-                                <rect key="frame" x="115" y="193" width="145" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="XMJ-7g-FGi"/>
-                                    <constraint firstAttribute="width" constant="145" id="g4u-gs-ra6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Ask Me For Money 💰 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8W-F1-QK3">
-                                <rect key="frame" x="42" y="144" width="291" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="291" id="Dvz-wg-2vg"/>
-                                    <constraint firstAttribute="height" constant="29" id="Xar-bE-VzF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="OTj-Qe-LC4">
+                                <rect key="frame" x="42" y="235" width="291" height="197"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Ask Me For Money 💰 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8W-F1-QK3">
+                                        <rect key="frame" x="0.0" y="0.0" width="291" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="291" id="Dvz-wg-2vg"/>
+                                            <constraint firstAttribute="height" constant="29" id="Xar-bE-VzF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am POOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPZ-x5-BGU">
+                                        <rect key="frame" x="73" y="35" width="145" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="XMJ-7g-FGi"/>
+                                            <constraint firstAttribute="width" constant="145" id="g4u-gs-ra6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coal" translatesAutoresizingMaskIntoConstraints="NO" id="7ar-dv-1iv">
+                                        <rect key="frame" x="70.5" y="77" width="150" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Rbw-jm-R9b"/>
+                                            <constraint firstAttribute="width" constant="150" id="gy6-9z-9Td"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.5083450711803672" green="0.83062065972222221" blue="0.68478305602413125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7ar-dv-1iv" firstAttribute="top" secondItem="QPZ-x5-BGU" secondAttribute="bottom" constant="8.5" id="3oM-S3-Fe5"/>
-                            <constraint firstItem="7ar-dv-1iv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7cO-JY-LNv"/>
-                            <constraint firstItem="QPZ-x5-BGU" firstAttribute="top" secondItem="o8W-F1-QK3" secondAttribute="bottom" constant="20" id="Jyl-KC-4qG"/>
-                            <constraint firstItem="o8W-F1-QK3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rcq-LO-DDH"/>
-                            <constraint firstItem="7ar-dv-1iv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mSh-2V-Hpx"/>
-                            <constraint firstItem="QPZ-x5-BGU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xMj-wG-gIy"/>
+                            <constraint firstItem="OTj-Qe-LC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gtm-LS-rac"/>
+                            <constraint firstItem="OTj-Qe-LC4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bV6-s4-9aX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
